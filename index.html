@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a4c6177c55.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="/Images/logo.png.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>UI/UX Designer</p>
+          <h1>Hi, I am <span>Angaj </span><br />Shrestha From Nepal</h1>
+        </div>
+      </div>
+    </div>
+    <!-----------------about----------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Images/main pic 2.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              My name is Angaj Shrestha, and I am a UI/UX designer based in
+              Nepal. I have a passion for creating user-friendly and visually
+              appealing designs that enhance the user experience. With a keen
+              eye for detail and a commitment to excellence, I strive to deliver
+              high-quality work that meets the needs of my clients.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web interfaces</li>
+                <li><span>Web Development </span><br />Web app development</li>
+                <li>
+                  <span>App Development</span><br />Building Android/iOS apps
+                </li>
+                <li>
+                  <span>Unity game Development</span><br />Building a fun puzzle
+                  game
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2025</span><br />Herald College</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2022</span><br />SEE from Rara Hill School</li>
+                <li><span>2024 </span><br />+2 NEB from DAV College</li>
+                <li>
+                  <span>2025-2027</span><br />Bsc(Hons)Computing Herald College
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------------Services------------------------ -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              I create visually appealing and user-friendly web designs that
+              enhance the user experience.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              I specialize in UI/UX design, focusing on creating intuitive
+              interfaces and seamless user experiences.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              I design intuitive and engaging mobile applications that provide a
+              seamless user experience.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------------------Portfolio------------------------------------------ -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Images/work-1.png.png" />
+            <div class="layer">
+              <h3>Weather App</h3>
+              <p>
+                This is a weather app that provides real-time weather updates
+                and forecasts.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/work-2.png.png" />
+            <div class="layer">
+              <h3>Websites</h3>
+              <p>
+                This is the website I have designed, showcasing my skill in web
+                design and development.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Images/work-3.png.png" />
+            <div class="layer">
+              <h3>Personal portfolio</h3>
+              <p>
+                This is my personal portfolio website, designed to showcase my
+                skills and projects.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- ------------------------------------------Contact------------------------------------------ -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>angajshr222@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i>+977 984-1234567</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/angaj.shrestha.5"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+              <a href="https://www.instagram.com/angajshrestha/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/angaj-shrestha-92b002324/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="Images/CV.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2025 Angaj Shrestha. All rights reserved.</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
